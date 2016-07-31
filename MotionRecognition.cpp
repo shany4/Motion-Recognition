@@ -1,6 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////
 //
-// Motion Recognition.cpp
 // TOPIC: Motion Recognition
 // Designer: Ying Shan
 //
@@ -47,8 +46,8 @@ Point moveball( Mat game, int orientation1, int orientation2, Point center );
 int main( )
 {
 	cv::VideoCapture cap;             // Open camera
-	//cap.open(CV_CAP_ANY);
-    cap.open(0);
+    
+	cap.open(0);
 	
 	if(!cap.isOpened())
 	{
